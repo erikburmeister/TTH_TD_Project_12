@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b57aaa90-a883-4179-9f00-1d109e6afce3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>positions_form</find>
+      <find>accept_applicant</find>
+      <find>app_to_accept</find>
+      <find>Profile</find>
+      <find>new</find>
+      <find>profile_user</find>
+      <find>stb_app</find>
+      <find>id</find>
+      <find>pk</find>
+      <find>noti</find>
+      <find>did_i</find>
+      <find>did_i_</find>
+      <find>#</find>
+      <find>projectform</find>
+      <find>style</find>
+      <find>applications</find>
+      <find>project_pos</find>
+      <find>project</find>
+      <find>project_position</find>
+      <find>action</find>
+      <find>choice</find>
+      <find>:project</find>
+      <find>mess</find>
+      <find>did_i_apply</find>
+      <find>the_position</find>
+      <find>base</find>
+      <find>needs_list</find>
+      <find>rock</find>
+      <find>home_need</find>
+      <find>need</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>choice_applicant</replace>
+      <replace>skills_list</replace>
+      <replace>skill</replace>
+      <replace>skill_needed</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/isolate.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/social_team_builder/settings.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/forms.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project_edit.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/notification_icon.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project_new.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templatetags/notifications.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/index_2.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/layout.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/social_team_builder/urls.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/models.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/static/stb_app/css/custom.css" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/profile_edit.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/search.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/index.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/notifications.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/urls.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/applications.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/views.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/tests.py" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/profile.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/sign_up.html" />
+        <option value="$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/login.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project12_SocialTeamBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project12_SocialTeamBuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project12_SocialTeamBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project12_SocialTeamBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="social_team_builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project12_SocialTeamBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project12_SocialTeamBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="social_team_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="stb_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project12_SocialTeamBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project12_SocialTeamBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="social_team_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="stb_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project12_SocialTeamBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project12_SocialTeamBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="social_team_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="stb_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p12_test" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b57aaa90-a883-4179-9f00-1d109e6afce3" name="Default Changelist" comment="" />
+      <created>1568992666836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568992666836</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10095389" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20888543" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/social_team_builder/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/migrations/0002_auto_20190912_0943.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/migrations/0001_initial.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/admin.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/apps.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/tests.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/migrations/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/views.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social/urls.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/password_reset_complete.html" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/password_reset_confirm.html" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/signup.html" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/sign_in.html" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/-----------" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/isolate.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/static/stb_app/css/global.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templatetags/notifications.py" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/notification_icon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#i#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/index_2.html" />
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/project_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/static/stb_app/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/profile_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="95" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/applications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
+          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/download.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/user_1_vkyPH7D.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/user_1_vkyPH7D_ks1vAM9.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/user_1_vkyPH7D_Pn8QIQ2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/user_1_vkyPH7D_W6GevFM.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/download_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social_team_builder/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#235#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social_team_builder/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#643#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/media/profile_pictures/download_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3168" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/social_team_builder/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24000">
+          <caret line="600" column="34" selection-start-line="600" selection-start-column="34" selection-end-line="600" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3480">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#0#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/stb_app/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2240">
+          <caret line="56" column="115" selection-start-line="56" selection-start-column="115" selection-end-line="56" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social_team_builder/stb_app/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

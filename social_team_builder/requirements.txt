@@ -1,0 +1,7 @@
+coverage==4.5.4
+Django==2.2.5
+django-ajax-selects==1.7.1
+django-widget-tweaks==1.4.5
+Pillow==6.1.0
+pytz==2019.2
+sqlparse==0.3.0

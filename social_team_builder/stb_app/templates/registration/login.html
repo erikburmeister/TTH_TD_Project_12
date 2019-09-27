@@ -7,7 +7,7 @@
       <h2>Log In</h2>
       <form method="POST">
         {% csrf_token %}
-        <p style="color:blue;">{{ form.errors.as_text }}</p>
+        <p style="color:red;">{{ form.errors.as_text }}</p>
 
         {% render_field form.username placeholder="Email Address" %}
         {% render_field form.password placeholder="Password" %}

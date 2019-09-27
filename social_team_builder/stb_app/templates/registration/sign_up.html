@@ -7,8 +7,8 @@
       <h2>Sign Up</h2>
       <form method="POST">
         {% csrf_token %}
-        <p style="color:blue;">{{ form.non_field_errors.as_text }}</p>
-        <p style="color:blue;">{{ form.errors.as_text }}</p>
+        <p style="color:red;">{{ form.non_field_errors.as_text }}</p>
+        <p style="color:red;">{{ form.errors.as_text }}</p>
         
         {% render_field form.email placeholder="Email Address" %}
         {% render_field form.username placeholder="Username" %}
