@@ -34,10 +34,13 @@ test@user.com - testpasword
 Skills that will help find projects:
 
 * python
-* css
-* html
-* javascript
-* php
+* js
+* c#
+* test
+
+Search for Ava and Terry's projects:
+* bot
+* test
 
 -----------------------------------------
 
