@@ -1,0 +1,42 @@
+{% extends 'stb_app/layout.html' %}
+{% load template_tags %}
+
+{% block body %}
+    <div class="grid-70 grid-push-5">
+        <table class="u-full-width circle--table">
+            <thead>
+                <tr>
+                    <th class="circle--cell--right">Notifications</th>
+                </tr>
+            </thead>
+            {% if notifications_all %}
+                {% for notification in notifications_all %}
+                    <tbody>
+                        {% if notification.seen %}
+                        <tr>
+                            <td>
+                                <p>{{ notification.notified_on }} | {{ notification.description }}<p>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td>
+                                <p>
+                                    <strong>{{ notification.notified_on }} | {{ notification.description }}</strong>
+                                <p>
+                            </td>
+                        </tr>
+                        {% endif %}
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td>
+                        <p>You don't have any notifications.</p>
+                    </td>
+                </tr>
+            {% endif %}
+                    </tbody>
+        </table>
+    </div>
+    <p hidden>{% notify_clear user %}</p>
+{% endblock %}

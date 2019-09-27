@@ -1,0 +1,92 @@
+{% extends 'stb_app/layout.html' %}
+{% load template_tags %}
+
+{% block body %}
+  {% if project.project_owned_by == user %}
+    <div class="circle--actions--bar">
+      <div class="bounds">
+        <div class="grid-100">
+          <a class="button" href="{% url 'social_team_builder:project_edit' project_pk=project.pk %}">Edit Project</a>
+          <a class="button button-text" href="{% url 'social_team_builder:project_delete' project_pk=project.pk %}">Delete Project</a>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="bounds circle--page circle--article">
+    <div class="grid-70">
+      <div class="circle--article--header">
+        <h4 class="circle--article--section">Project</h4>
+        <h1 class="circle--article--title">{{ project.project_title }}</h1>
+        <p class="circle--article--byline">Project Owner: 
+          <a style="text-decoration: none;" href="{% url 'social_team_builder:profile' pk=project.project_owned_by.user_profile.id %}">{{ project.project_owned_by.user_profile.name }}</a></p>
+      </div>
+
+      <div class="circle--article--body">
+        <p>{{ project.project_description }}</p>
+      </div>
+
+      <div class="circle--project--positions">
+        <h2>Positions</h2>
+        <ul class="circle--group--list">
+          {% for position in project.project_position.all %}
+          <li>
+            <h3>{{ position.position_name }}</h3>
+            <p>{{ position.position_description }}</p>
+
+            {% if position.position_filled %}
+              {% if project.project_owned_by != user %}
+                <a class="button button-primary button-inactive">Position Filled</a>
+              {% else %}
+                <a href="{% url 'social_team_builder:project_position' project_pk=project.pk position_pk=position.id choice='undo' %}" class="button button-primary">Position Filled/undo</a>
+              {% endif %}
+
+            {% else %}
+              {% if project.project_owned_by != user %}
+                {% applied applications=position.application_position.all user=user as did_apply %}
+                {% if did_apply %}
+                  <a href="{% url 'social_team_builder:project_position' position_pk=position.id choice='rescind' project_pk=project.pk %}" class="button button-primary">You applied/rescind</a>
+                {% else %}
+                  {% if user.is_authenticated and profile %}
+                    <a href="{% url 'social_team_builder:project_position' position_pk=position.id choice='apply' project_pk=project.pk %}" class="button button-primary">Apply</a>
+                  {% else %}
+                    <a class="button button-primary button-inactive">Position Not Filled</a>
+                  {% endif %}
+                {% endif %}
+
+              {% else %}
+                  <a class="button button-primary button-inactive">Position Not Filled</a>
+              {% endif %}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-25 grid-push-5">
+      <div class="circle--secondary--module">
+        <h3>Project Needs</h3>
+        <ul class="circle--link--list">
+          {% for position in project.project_position.all %}
+            {% if not position.position_filled %}
+              <li><a>{{ position.position_name }}</a></li>
+            {% else %}
+              <p>{{ position.position_name }} position filled.</p>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="circle--secondary--module">
+        <h3>Project Timeline</h3>
+        <p>{{ project.project_timeline }}</p>
+      </div>
+
+      <div class="circle--secondary--module">
+        <h3>Applicant Requirements</h3>
+        <p>{{ project.project_application }}</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

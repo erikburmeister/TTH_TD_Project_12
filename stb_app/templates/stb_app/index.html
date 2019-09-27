@@ -1,0 +1,65 @@
+{% extends 'stb_app/layout.html' %}
+
+{% block body %}
+  <div class="bounds circle--page">
+    <div class="circle--page--header circle--fluid">
+      <div class="circle--fluid--cell circle--fluid--primary">
+        <h2>Projects that require any of your skills</h2>
+      </div>
+      <div class="circle--fluid--cell circle--fluid--secondary">
+        <a class="button button-primary icon-on-left" href="{% url 'social_team_builder:project_new' %}">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve" class="add">
+            <polygon points="7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 "/>
+          </svg>
+          New Project
+        </a>
+      </div>
+    </div>
+
+    <div class="grid-25">
+      <div class="circle--filter circle--secondary--module">
+        <h4>Your Skills</h4>
+        <ul class="circle--filter--list">
+          {% for skills in skills_list %}
+            {% if skills == skill_needed %}
+              <li><a href="{% url 'social_team_builder:home_skill_needed' skill_needed=skills %}" class="selected">{{ skills }}</a></li>
+            {% else %}
+              <li><a href="{% url 'social_team_builder:home_skill_needed' skill_needed=skills %}">{{ skills }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-70 grid-push-5">
+      <table class="u-full-width circle--table">
+        <thead>
+          <tr>
+            <th>Project Title</th>
+            <th class="circle--cell--right">Project Needs</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if not positions %}
+            <tr>
+              <td>
+                <p>Your skills don't match any project requirements.</p>
+              </td>
+            </tr>
+          {% else %}
+            {% for position in positions %}
+              <tr class="clickable-row" data-href="{% url 'social_team_builder:project' project_pk=position.project.pk %}">
+                <td>
+                  <h3>{{ position.project.project_title }}</h3>
+                </td>
+                <td class="circle--cell--right">
+                  <span class="secondary-label">{{ position.position_name }}</span>
+                </td>
+              </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}

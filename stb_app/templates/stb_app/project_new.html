@@ -1,0 +1,68 @@
+{% extends 'stb_app/layout.html' %}
+{% load widget_tweaks %}
+
+{% block body %}
+  <script type="text/javascript">
+    $(function() {
+          $('#add_position li').formset({
+              addText:'Add Position',
+              prefix: '{{ positions_formset.prefix }}',
+              formCssClass: 'dynamic-positions_formset'
+            });
+
+            })
+  </script>
+
+  <form method="POST">
+  {% csrf_token %}
+
+    <div class="circle--actions--bar">
+      <div class="bounds">
+        <div class="grid-100">
+          <input type="submit" class="button button-primary" value="Save Project">
+          <a class="button button-text" href="{% url 'social_team_builder:home' %}">Discard</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bounds circle--page circle--article">
+      <div class="grid-70">
+        <div class="circle--article--body">
+          {{ project_form.non_field_errors.as_text }}
+          {{ project_form.errors.as_text }}
+          {% render_field project_form.project_title placeholder="Project Title" %}
+          {% render_field project_form.project_description placeholder="Project description..." %}
+        </div>
+
+        <div class="circle--project--positions">
+          <h2>Positions</h2>
+          <ul id="add_position" class="circle--group--list circle--clone--list">
+            {{ position_form.non_field_errors.as_text }}
+            {{ position_form.errors.as_text }}
+            {{ position_formset.management_form }}
+            {% for position_form in position_formset %}
+              {{ position_form.id }}
+              <li>
+                {% render_field position_form.position_name placeholder="Position Title" %}
+                {% render_field position_form.position_description placeholder="Position description..." %}
+              </li>
+            {% endfor %}
+          </ul>
+          <input type="submit" class="button button-primary" value="Save Project">
+        </div>
+      </div>
+
+      <div class="grid-25 grid-push-5">
+        <div class="circle--secondary--module">
+          <h3>Project Timeline</h3>
+          {% render_field project_form.project_timeline placeholder="Time estimate" %}
+        </div>
+
+        <div class="circle--secondary--module">
+          <h3>Applicant Requirements</h3>
+          {% render_field project_form.project_application placeholder="Skill required" %}
+        </div>
+      </div>
+    </div>
+  </form>
+{% endblock %}

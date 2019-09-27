@@ -1,0 +1,9 @@
+{% if to_notify %}
+    <a style="text-decoration:none;" href="{% url 'social_team_builder:notifications' %}">
+        <i class="fa fa-bell-o" aria-hidden="true"><span style="color:white; background:red; padding:2px; border-radius: 5px; position: relative; bottom:10px;">{{ count }}</span></i>
+    </a>
+{% else %}
+    <a style="text-decoration:none;" href="{% url 'social_team_builder:notifications' %}">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+    </a>
+{% endif %} 

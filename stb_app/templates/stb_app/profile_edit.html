@@ -1,0 +1,118 @@
+{% extends 'stb_app/layout.html' %}
+{% load widget_tweaks %}
+
+{% block body %}
+  <script type="text/javascript">
+    $(function() {
+          $('#add_skill li').formset({
+              addText:'Add Skill',
+              prefix: '{{ skills_formset.prefix }}',
+              formCssClass: 'dynamic-skills_formset'
+            });
+
+            $('#add_project li').formset({
+              addText: 'Add Project',
+              prefix: '{{ projects_formset.prefix }}',
+              formCssClass: 'dynamic-projects_formset'
+            });
+
+            })
+
+    function upload_img(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img_id').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+  </script>
+
+  <div class="circle--actions--bar">
+    <nav class="bounds">
+      <ul class="circle--pill--list">
+        {% if user_profile_form.instance.pk %}
+          <li><a href="{% url 'social_team_builder:applications' %}">Applications</a></li>
+          <li><a class="selected" href="{% url 'social_team_builder:profile' pk=user_profile.pk %}">Profile</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+
+  <form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+
+    <div class="bounds circle--page">
+      <div class="circle--page--header circle--fluid">
+        <div class="circle--fluid--cell circle--fluid--primary">
+          <h2>Profile</h2>
+        </div>
+        <div class="circle--fluid--cell circle--fluid--secondary">
+          <input type="submit" class="button button-primary icon-on-left" value="Save Changes">
+        </div>
+      </div>
+
+      <div class="grid-70">
+        {{ user_profile_form.non_field_errors }}
+        {{ user_profile_form.errors }}
+        {{ user_profile_form.name.errors }}
+        {% render_field user_profile_form.name placeholder="Full Name" %}
+        <div>
+          {{ user_profile_form.bio.errors }}
+          {% render_field user_profile_form.bio placeholder="Tell us about yourself..." %}
+        </div>
+      </div>
+
+      {{ user_profile_form.image.errors }}
+      <div class="grid-25 grid-push-5">
+        <div class="circle--secondary--module">
+          {% if user_profile_form.instance.avatar %}
+            <img style='height: 100%; width: 100%; object-fit: contain' src="{{ user_profile_form.instance.avatar.url }}" id="img_id"/>
+          {% else %}
+            <img style='height: 100%; width: 100%; object-fit: contain' id="img_id" />
+          {% endif %}
+          <label for="id_user_profile_image" class="button button-primary icon-on-left">Upload Photo</label>
+          {% render_field user_profile_form.avatar style='display:none' name="user_profile-image" id="id_user_profile_image" onchange="upload_img(this);" %}
+        </div>
+
+        <div class="circle--secondary--module">
+          <h4>My Skills</h4>
+          <ul id='add_skill' class="circle--clone--list">
+            {{ skill_formset.management_form }}
+            {% for skill_form in skill_formset %}
+              {{ skill_form.id }}
+              {{ skill_form.non_field_errors }}
+              {{ skill_form.errors }}
+            <li>
+              {% if skill_form.instance.pk %}{{ skill_form.DELETE }}{% endif %}
+              {% render_field skill_form.skill_name placeholder="Skill" %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="circle--secondary--module">
+          <h4>Past Projects</h4>
+          <ul id="add_project" class="circle--clone--list">
+            {{ project_formset.management_form }}
+            {% for project_form in project_formset %}
+              {{ project_form.id }}
+              {{ project_form.non_field_errors }}
+              {{ project_form.errors }}
+              <li>
+                {% if project_form.instance.pk %}{{ project_form.DELETE }}{% endif %}
+                {% render_field project_form.project_title placeholder="Project Name" %}
+                {% render_field project_form.url placeholder="Project URL" %}
+              </li>
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+{% endblock %}
+
+

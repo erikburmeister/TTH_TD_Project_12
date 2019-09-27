@@ -1,0 +1,71 @@
+{% extends 'stb_app/layout.html' %}
+{% load widget_tweaks %}
+
+{% block body %}
+  <script type="text/javascript">
+    $(function() {
+          $('#add_position li').formset({
+              addText:'Add Position',
+              prefix: '{{ positions_formset.prefix }}',
+              formCssClass: 'dynamic-positions_formset'
+            });
+
+            })
+  </script>
+
+  <form method="POST">
+  {% csrf_token %}
+
+    <div class="circle--actions--bar">
+      <div class="bounds">
+        <div class="grid-100">
+          <input type="submit" class="button button-primary" value="Save Changes">
+          <a class="button button-text" href="{% url 'social_team_builder:project_delete' project_pk=projects.pk %}">Delete Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bounds circle--page circle--article">
+      <div class="grid-70">
+        <div class="circle--article--body">
+          {{ project_form.non_field_errors }}
+          {{ project_form.errors }}
+          {% render_field project_form.project_title placeholder="Project Title" %}
+          {% render_field project_form.project_description placeholder="Project description..." %}
+        </div>
+
+        <div class="circle--project--positions">
+          <h2>Positions</h2>
+          <ul id="add_position" class="circle--group--list circle--clone--list">
+            {{ position_formset.management_form }}
+            {% for position_form in position_formset %}
+              {{ position_form.id }}
+              {{ position_form.non_field_errors }}
+              {{ position_form.errors }}
+            <li>
+              {% if position_form.instance.pk %}
+                {{ position_form.DELETE }}
+              {% endif %}
+              {% render_field position_form.position_name placeholder="Position Title" %}
+              {% render_field position_form.position_description placeholder="Position description..." %}
+            </li>
+            {% endfor %}
+          </ul>
+          <input type="submit" class="button button-primary" value="Save Changes">
+        </div>
+      </div>
+
+      <div class="grid-25 grid-push-5">
+        <div class="circle--secondary--module">
+          <h3>Project Timeline</h3>
+          {% render_field project_form.project_timeline placeholder="Time estimate" %}
+        </div>
+
+        <div class="circle--secondary--module">
+          <h3>Application Requirements</h3>
+          {{ project_form.project_application }}
+        </div>
+      </div>
+    </div>
+  </form>
+{% endblock %}

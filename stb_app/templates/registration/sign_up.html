@@ -1,0 +1,23 @@
+ {% extends 'stb_app/layout.html' %}
+ {% load widget_tweaks %}
+
+{% block body %}
+  <div class="bounds">
+    <div class="grid-30 centered">
+      <h2>Sign Up</h2>
+      <form method="POST">
+        {% csrf_token %}
+        <p style="color:blue;">{{ form.non_field_errors.as_text }}</p>
+        <p style="color:blue;">{{ form.errors.as_text }}</p>
+        
+        {% render_field form.email placeholder="Email Address" %}
+        {% render_field form.username placeholder="Username" %}
+        {% render_field form.password1 placeholder="Password" %}
+        {% render_field form.password2 placeholder="Confirm Password" %}
+
+        <button type="submit" class="button-primary">Sign Up</button>
+        <a class="button" href="{% url 'login' %}">Log In</a>
+      </form>
+    </div>
+  </div>
+{% endblock %} 
